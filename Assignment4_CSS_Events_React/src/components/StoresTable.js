@@ -14,7 +14,7 @@ function StoresTable({ stores }) {
         </thead>
 
         <tbody>
-          {stores.map(store => (
+          {stores.map((store) => (
             <tr>
               <td>{store.city}</td>
               <td>{store.state}</td>

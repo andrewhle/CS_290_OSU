@@ -32,7 +32,16 @@ function App() {
             <StoresPage stores={stores} />
           </Route>
         </main>
-        <footer>Copy right by Hung Le, modified on {Date()}</footer>
+        <footer>
+          Copy right, modified{" "}
+          {new Intl.DateTimeFormat("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          }).format(new Date())}{" "}
+          by Hung Le
+        </footer>
       </Router>
     </div>
   );

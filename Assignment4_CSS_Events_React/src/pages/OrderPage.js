@@ -1,10 +1,15 @@
 import React from "react";
 import "../App.css";
+import GroceryTable from "../components/GroceryTable";
 
-function OrderPage() {
+function OrderPage({ items }) {
   return (
     <>
-      <h2>This is Order Page</h2>
+      <article>
+        <h2>Items</h2>
+        <p>Select your items</p>
+        <GroceryTable items={items} />
+      </article>
     </>
   );
 }
