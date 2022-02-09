@@ -17,9 +17,10 @@ function App() {
     <div className="App">
       <Router>
         <header className="header">
-          <h1>Local online Groceries Shopping</h1>
+          <h2>Online Groceries Shopping</h2>
           <Nav />
         </header>
+
         <main>
           <Route path="/" exact>
             <HomePage />
@@ -32,7 +33,8 @@ function App() {
             <StoresPage stores={stores} />
           </Route>
         </main>
-        <footer>
+
+        <footer className="footer">
           Copy right, modified{" "}
           {new Intl.DateTimeFormat("en-US", {
             weekday: "long",

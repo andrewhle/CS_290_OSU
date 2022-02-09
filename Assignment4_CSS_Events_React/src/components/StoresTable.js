@@ -5,17 +5,17 @@ function StoresTable({ stores }) {
   return (
     <>
       <table>
-        <caption>list of stores</caption>
-
         <thead>
-          <th>city</th>
-          <th>state</th>
-          <th>zip code</th>
+          <tr>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip code</th>
+          </tr>
         </thead>
 
         <tbody>
-          {stores.map((store) => (
-            <tr>
+          {stores.map(store => (
+            <tr key={store.id}>
               <td>{store.city}</td>
               <td>{store.state}</td>
               <td>{store.zipCode}</td>

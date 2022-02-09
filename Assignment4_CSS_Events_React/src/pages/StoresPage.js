@@ -6,8 +6,8 @@ import "../App.css";
 function StoresPage({ stores }) {
   return (
     <>
-      <h1>This is Store Page</h1>
-      <p>Tell the user what to do</p>
+      <h2 className="storeHeader">List Stores</h2>
+      <p className="pStores">You can view nearby store below</p>
       <StoresTable stores={stores} />
       <ZipSearch />
     </>

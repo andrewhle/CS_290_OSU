@@ -3,12 +3,10 @@ import "../App.css";
 
 function HomePage() {
   return (
-    <>
-      <h2>This is Home Page</h2>
-      <h2>Welcome to my shop</h2>
-      <p>Oreder Groceries at your local store</p>
-      <p>Click tab above to order</p>
-    </>
+    <div className="container">
+      <h2>Introducing to your online groceries </h2>
+      <p>Order and view stores on tabs above</p>
+    </div>
   );
 }
 

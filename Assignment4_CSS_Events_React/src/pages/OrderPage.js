@@ -6,8 +6,9 @@ function OrderPage({ items }) {
   return (
     <>
       <article>
-        <h2>Items</h2>
-        <p>Select your items</p>
+        <h2 className="itemsHeader">Items</h2>
+        <p className="pOrder">Select up to 10 items</p>
+
         <GroceryTable items={items} />
       </article>
     </>

@@ -1,17 +1,30 @@
 import React from "react";
+import Increment from "./Increment";
 import "../App.css";
 
 function GroceryTable({ items }) {
   return (
     <>
-      <h4>This is a table</h4>
       <table>
         <thead>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
         </thead>
-        <tbody></tbody>
+
+        <tbody>
+          {items.map(item => (
+            <tr key={item.id}>
+              <td>{item.name}</td>
+              <td>${item.price}</td>
+              <td>
+                <Increment />
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </>
   );

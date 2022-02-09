@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+.App {
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   max-width: 1000px;
   margin: 0 auto;
@@ -13,10 +25,89 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
+  gap: 400px;
 }
 
 .navbar {
   display: flex;
   list-style-type: none;
   gap: 20px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.storeHeader {
+  margin-right: 650px;
+}
+
+.pStores {
+  margin-right: 500px;
+}
+
+.itemsHeader {
+  margin-right: 720px;
+}
+
+.pOrder {
+  margin-right: 610px;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 29px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-;
+}
+
+.messages {
+  display: inline;
+  width: 100px;
+  height: 29px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-;
+}
+
+.incrementButton {
+  height: 3vh;
+  width: 3vh;
 }
